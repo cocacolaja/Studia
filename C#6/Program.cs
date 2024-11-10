@@ -58,7 +58,7 @@ namespace Cwiczenia6
 
             ulamki.ForEach(u => Console.WriteLine(u));
 
-            ulamki.Sort();
+            ulamki.Sort((u1,u2)=> Ulamek.Dziesietne(lz1).CompareTo(Ulamek.Dziesietne(u2)));
             
             Console.WriteLine("Po sortowaniu");
             ulamki.ForEach(u => Console.WriteLine(u));
