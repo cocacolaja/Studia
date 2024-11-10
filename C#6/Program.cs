@@ -1,7 +1,5 @@
 ﻿// do domu klasa ułamek, zdefionowac wszystkie operacje podstw., skrócić,
-// przedstawic jako czesc calkowita i ulamek, wymyslic cos jak zadanie 1, wybranie najw z listy albo cos w tym stylu, kazdy inne(posortowac
-// wyslac zadanie domowe
-// dopisać w zadaniu 1 sortowanie ze zdjęcia
+// przedstawic jako czesc calkowita i ulamek, wymyslic cos jak zadanie 1, wybranie najw z listy albo cos w tym stylu, kazdy inne(posortowac)
 
 namespace Cwiczenia6
 {
@@ -58,7 +56,7 @@ namespace Cwiczenia6
 
             ulamki.ForEach(u => Console.WriteLine(u));
 
-            ulamki.Sort((u1,u2)=> Ulamek.Dziesietne(lz1).CompareTo(Ulamek.Dziesietne(u2)));
+            ulamki.Sort((u1,u2)=> Ulamek.Dziesietne(u1).CompareTo(Ulamek.Dziesietne(u2)));
             
             Console.WriteLine("Po sortowaniu");
             ulamki.ForEach(u => Console.WriteLine(u));
