@@ -98,7 +98,10 @@ namespace Cwiczenia6
             return($"{x.licznik}/{x.mianownik}");}
         }
             
-        public static 
+        public static double Dziesietny(Ulamek x)
+        {
+            return((double)x.licznik/x.mianownik);
+        }
        
     }
 }
