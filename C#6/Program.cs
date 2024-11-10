@@ -48,7 +48,6 @@ namespace Cwiczenia6
         {
             //Test1();
             Zadanie1();
-            //lista liczb zespolonych gdzie liczby zespolone to l. losowe i posortowć wedlug modulu
         }
     }
 }
