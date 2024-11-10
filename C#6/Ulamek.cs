@@ -100,7 +100,7 @@ namespace Cwiczenia6
             
         public static double Dziesietny(Ulamek x)
         {
-            return((double)x.licznik/x.mianownik);
+            return (double)x.licznik/x.mianownik;
         }
        
     }
