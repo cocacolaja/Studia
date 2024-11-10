@@ -34,13 +34,14 @@ namespace Cwiczenia6
                 lzespolone.Add(z);
             }
 
-            lzespolone.ForEach(lz => Console.WriteLine($"{lz}"));
-            //liczbyZespolone.ForEach
-            
-            lzespolone.Sort((l1,l2)=> LZespolona.Abs(lz1).CompareTo(LZespolona.Abs(lz2))
+            lzespolone.ForEach(lz => Console.WriteLine($"{lz}, " + $"{LZespolona.Abs(lz):f2}"));
 
-
-
+            lzespolone.Sort((lz1,lz2)=> LZespolona.Abs(lz1).CompareTo(LZespolona.Abs(lz2))
+                            
+            Console.WriteLine("Po sortowaniu");
+                            
+            lzespolone.ForEach(lz => Console.WriteLine($"{lz}, " + $"{LZespolona.Abs(lz):f2}"));
+                            
         }
 
         static void Main()
