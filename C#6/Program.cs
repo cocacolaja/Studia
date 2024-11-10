@@ -59,7 +59,8 @@ namespace Cwiczenia6
             ulamki.ForEach(u => Console.WriteLine(u));
 
             ulamki.Sort();
-
+            
+            Console.WriteLine("Po sortowaniu");
             ulamki.ForEach(u => Console.WriteLine(u));
             
         }
