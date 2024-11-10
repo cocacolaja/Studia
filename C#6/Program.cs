@@ -55,6 +55,12 @@ namespace Cwiczenia6
                 Ulamek u = new(rand.Next(1,100), rand.Next(1,100));
                 ulamki.Add(u);
             }
+
+            ulamki.ForEach(u => Console.WriteLine(u));
+
+            ulamki.Sort();
+
+            ulamki.ForEach(u => Console.WriteLine(u));
             
         }
 
