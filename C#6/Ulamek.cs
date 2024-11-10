@@ -37,9 +37,9 @@ namespace Cwiczenia6
             if(x.mianownik ==y.mianownik){
             return new(x.licznik+y.licznik, x.mianownik);}
             else if(x.mianownik % y.mianownik ==0){
-            return new(x.licznik+y.licznik*(x.mianownik/y.mianownik, x.mianownik);}
+            return new(x.licznik+y.licznik*(x.mianownik/y.mianownik, x.mianownik));}
             else if(y.mianownik % x.mianownik ==0){
-            return new(y.licznik+x.licznik*(y.mianownik/x.mianownik, y.mianownik);}
+            return new(y.licznik+x.licznik*(y.mianownik/x.mianownik, y.mianownik));}
             else{
             return new(x.licznik*y.mianownik+y.licznik*x.mianownik, x.mianownik*y.mianownik);}
         }
@@ -50,9 +50,9 @@ namespace Cwiczenia6
             if(x.mianownik ==y.mianownik){
             return new(x.licznik-y.licznik, x.mianownik);}
             else if(x.mianownik % y.mianownik ==0){
-            return new(x.licznik-y.licznik*(x.mianownik/y.mianownik, x.mianownik);}
+            return new(x.licznik-y.licznik*(x.mianownik/y.mianownik, x.mianownik));}
             else if(y.mianownik % x.mianownik ==0){
-            return new(y.licznik-x.licznik*(y.mianownik/x.mianownik, y.mianownik);}
+            return new(y.licznik-x.licznik*(y.mianownik/x.mianownik, y.mianownik));}
             else{
             return new(x.licznik*y.mianownik-y.licznik*x.mianownik, x.mianownik*y.mianownik);}
         }
