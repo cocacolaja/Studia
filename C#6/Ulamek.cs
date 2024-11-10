@@ -16,7 +16,7 @@ namespace Cwiczenia6
         int licznik;
         int mianownik;
 
-        public Ulamek(int licznik, int mianownik;)
+        public Ulamek(int licznik, int mianownik)
         {
             this.licznik = licznik;
             this.mianownik = mianownik;
