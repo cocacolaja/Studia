@@ -13,6 +13,10 @@ namespace Cwiczenia6
 {
     internal class Ulamek
     {
+        if (mianownik == 0)
+        {
+            throw new ArgumentException("Mianownik nie może być zerem.");
+        }
         int licznik;
         int mianownik;
 
