@@ -1,4 +1,4 @@
-﻿// do domu klasa ułamek, zdefionowac wszystkie operacje podstw., skrócić,
+// do domu klasa ułamek, zdefionowac wszystkie operacje podstw., skrócić,
 // przedstawic jako czesc calkowita i ulamek, wymyslic cos jak zadanie 1, wybranie najw z listy albo cos w tym stylu, kazdy inne(posortowac)
 
 namespace Cwiczenia6
@@ -34,12 +34,27 @@ namespace Cwiczenia6
 
             lzespolone.ForEach(lz => Console.WriteLine($"{lz}, " + $"{LZespolona.Abs(lz):f2}"));
 
-            lzespolone.Sort((lz1,lz2)=> LZespolona.Abs(lz1).CompareTo(LZespolona.Abs(lz2))
-                            
+            lzespolone.Sort((lz1, lz2) => LZespolona.Abs(lz1).CompareTo(LZespolona.Abs(lz2)));
+
+
             Console.WriteLine("Po sortowaniu");
-                            
+
             lzespolone.ForEach(lz => Console.WriteLine($"{lz}, " + $"{LZespolona.Abs(lz):f2}"));
-                            
+
+        }
+
+        static void Test2()
+        {
+            Ulamek u1 = new(3, 10);
+            Ulamek u2 = new(8, 2);
+
+            Console.WriteLine(u1);
+            Console.WriteLine(u2);
+
+            Console.WriteLine(u1 + u2);
+            Console.WriteLine(u1 - u2);
+            Console.WriteLine(u1 * u2);
+            Console.WriteLine(u1 / u2);
         }
 
         static void Zadanie2()
@@ -50,23 +65,23 @@ namespace Cwiczenia6
 
             for (int i = 0; i < 10; i++)
             {
-                Ulamek u = new(rand.Next(1,100), rand.Next(1,100));
+                Ulamek u = new(rand.Next(1, 100), rand.Next(1, 100));
                 ulamki.Add(u);
             }
 
             ulamki.ForEach(u => Console.WriteLine(u));
 
-            ulamki.Sort((u1,u2)=> Ulamek.Dziesietne(u1).CompareTo(Ulamek.Dziesietne(u2)));
-            
+            ulamki.Sort((u1, u2) => Ulamek.Dziesietny(u1).CompareTo(Ulamek.Dziesietny(u2)));
+
             Console.WriteLine("Po sortowaniu");
             ulamki.ForEach(u => Console.WriteLine(u));
-            
+
         }
 
         static void Main()
         {
-            //Test1();
-            Zadanie1();
+            //Test2();
+            Zadanie2();
         }
     }
 }
