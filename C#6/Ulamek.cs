@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Cwiczenia6
 {
-    internal class Ulamek
+    internal class Ulamek : IComparable<Ulamek> // dziedzicznie IComparable, żeby móc stworzyć wlasną metode CompareTo
     {
         if (mianownik == 0)
         {
@@ -24,6 +24,13 @@ namespace Cwiczenia6
         {
             this.licznik = licznik;
             this.mianownik = mianownik;
+        }
+
+        public int CompareTo(Ulamek other) // zapis metody compare to, tak, zeby dobrze porównywał ułamki
+        {
+            double thisValue = (double)this.licznik / this.mianownik;
+            double otherValue = (double)other.licznik / other.mianownik;
+            return thisValue.CompareTo(otherValue);
         }
 
         public override string ToString()
