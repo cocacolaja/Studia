@@ -44,6 +44,20 @@ namespace Cwiczenia6
                             
         }
 
+        static void Zadanie2()
+        { // losuje 10 ułamków i sortuje je 
+            Random rand = new Random();
+            List<Ulamek> ulamki = new();
+
+
+            for (int i = 0; i < 10; i++)
+            {
+                Ulamek u = new(rand.Next(1,100), rand.Next(1,100));
+                ulamki.Add(u);
+            }
+            
+        }
+
         static void Main()
         {
             //Test1();
