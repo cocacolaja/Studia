@@ -44,7 +44,7 @@ namespace Cwiczenia6
         public static LZespolona operator/(LZespolona x, LZespolona y)
         {
             // dodać sprawdzeni czy dzielnik !=0
-            return new(((x.re * y.re) + (x.im * y.im)) / (y.re * y.re + y.im * y.im), ((x.im * y.re) - (x.re * y.im)) / (y.re * y.re + y.im * y.im)); // nie ma ^2 ???
+            return new(((x.re * y.re) + (x.im * y.im)) / (y.re * y.re + y.im * y.im), ((x.im * y.re) - (x.re * y.im)) / (y.re * y.re + y.im * y.im)); // nie ma ^2
         }
 
         public static LZespolona Conj(LZespolona x)
