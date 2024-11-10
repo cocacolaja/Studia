@@ -25,7 +25,7 @@ namespace Cwiczenia6
         public override string ToString()
         {
             if(x.licznik > x.mianownik){
-            return x.Skracanie;}
+            return Postac(this);}
             else{
             return $"({x.licznik}/{x.mianownik})"};
         }
@@ -81,7 +81,7 @@ namespace Cwiczenia6
         public static Ulamek Skracanie(Ulamek x)
         {
             int nwd = NWD(x.licznik,x.mianownik);
-            return new(x.licznik/NWD, x.mianowni/NWD);
+            return new(x.licznik/NWD, x.mianownik/NWD);
         }
 
         public static string Postac(Ulamek x)
@@ -89,7 +89,7 @@ namespace Cwiczenia6
             int reszta = x.licznik%x.mianownik;
             int calkowite = (x.licznik - reszta)/x.mianownik;
             if(x.licznik > x.mianownik){
-            return new($"{calkowite}({reszta}/{x.mianownik})");
+            return($"{calkowite}({reszta}/{x.mianownik})");
             else{
             return($"{x.licznik}/{x.mianownik}");}
         }
