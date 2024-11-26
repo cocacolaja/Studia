@@ -59,21 +59,25 @@ namespace Cwiczenia7
             //czlonkowie = czlonkowie.OrderBy(cz=>cz.Nazwisko).ThenBy(cz=>cz.Imie); alternatywna wersja do napisania compereTo w czlonek zespolu
         }
 
-        public object Clone() //napisac alternatywna metode z wykladu(serializacja do pamieci)
+        public Zespol? Clone() //napisac alternatywna metode z wykladu(serializacja do pamieci)
         {
-            Zespol z = (Zespol)MemberwiseClone();
-            z.Kierownik= (KierownikZespolu)Kierownik.Clone();
-            z.Czlonkowie = new();
-            Czlonkowie.ForEach(cz=>z.Czlonkowie.Add((CzlonekZespolu)cz.Clone()));
-            return z;
+            //Zespol z = (Zespol)MemberwiseClone();
+            //z.Kierownik = (KierownikZespolu)Kierownik.Clone();
+            //z.Czlonkowie = new();
+            //Czlonkowie.ForEach(cz =>z.Czlonkowie.Add((CzlonekZespolu)cz.Clone()));
+            //return z;
+
+
+            //za pomoca DataContract
+
+                MemoryStream ms = new();
+                DataContractSerializer dcs = new(typeof(Zespol));
+                dcs.WriteObject(ms, this);
+                ms.Position = 0; // powrót na początek strumienia
+                return (Zespol?)dcs.ReadObject(ms);
+
 
         }
-
-        //public object Clone(Zespol z)
-        //{
-        //    
-        //}
-
 
         public void SortujPoPesel()
         {
@@ -110,19 +114,21 @@ namespace Cwiczenia7
                 return (Zespol?)xs.Deserialize(sr);
         }
 
-        public void ZapisDCXml(string nazwaPliku)
+       public void ZapiszDCXML(string nazwa)//zmieniono z bool na void
         {
             DataContractSerializer dsc = new(typeof(Zespol));
-            using XmlTextWriter writer = new(nazwaPliku, Encoding.UTF8);
+            using XmlTextWriter writer = new("zespol.xml", Encoding.UTF8); // tu można dać nazwa(to od string nazwa), zamiast zespol
             dsc.WriteObject(writer, this);
         }
-        public static Zespol? OdczytDCXml(string nazwaPliku)
+
+        public static Zespol? OdczytajDCXML (string nazwa)
         {
-            if (!File.Exists(nazwaPliku)) { return null; }
+            if (!File.Exists(nazwa)) { return null; }
             DataContractSerializer dsc = new(typeof(Zespol));
-            using XmlTextReader reader = new(nazwaPliku);
+            using XmlTextReader reader = new("zespol.xml"); // tu można dać nazwa(to od string nazwa), zamiast zespol
             return (Zespol?)dsc.ReadObject(reader);
         }
+
         
     }
 }
