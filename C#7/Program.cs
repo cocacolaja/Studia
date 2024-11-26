@@ -36,13 +36,17 @@
             Console.WriteLine(z);
 
             z.ZapiszXml("zespol.xml");
+            // odczyt z xml
+            Zespol? z2 = Zespol.OdczytajDCXML("zespol.xml");
 
-            //nie wiem jak dodać odczyt z xml
-            Zespol? kopiaKlasy = Zespol.OdczytXml("zespol.xml");
-            if (kopiaKlasy is not null)
+            if (z2 is not null)
             {
-                kopiaKlasy.Czlonkowie.ForEach(el => Console.Write($"{el.Nazwa} ")); /// 
+                Console.WriteLine(z2);
             }
+            Console.WriteLine("Po klonowaniu:");
+            Zespol z3 = z2.Clone();
+            Console.WriteLine(z3);
+
         }
     }
 }
