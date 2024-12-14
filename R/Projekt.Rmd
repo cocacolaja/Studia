@@ -1,0 +1,66 @@
+---
+title: "Projekt"
+author: "Monika Zelek"
+date: "2024-11-19"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    highlight: tango
+    theme: cerulean
+---
+# Wstęp
+ Dane, na którymi się posłuże pochodzą z:
+ <a href=https://www.kaggle.com/datasets/steve1215rogg/student-lifestyle-dataset?resource=download" style="color: #FF69B4;">kaggle/student_lifestyle_dataset</a>. Zawierają wyniki ankiety wypełnionej przez 2000 uczniów o ich stylu życia zebrane przez Google Form w okresie od sierpnia 2023 do maja 2024 roku głównie na terenie Indii. Chce zbadać jakie czynniki najbardziej wpływają na stres i wyniki uczniów oraz jaka jest zależność między stresem a wynikami.
+ 
+ 
+ include = FALSE echo=TRUE, results='hide'
+ message=FALSE, warning=FALSE
+ <span style="color: #F797A8;"></span>
+
+# Pakiety, których będę używać
+```{r results='hide', message=FALSE, warning=FALSE}
+library(dplyr)
+library(mice)
+
+```
+
+
+# Objaśnienie zmiennych
+* <span style="color: #FF69B4;">Student_ID</span>- liczba porządkowa przypisana uczniowi
+* <span style="color: #FF69B4;">Study_Hours_Per_Day</span> - liczba godzin poświęcona w ciągu dnia na nauke
+* <span style="color: #FF69B4;">Extracurricular_Hours_Per_Day</span> - liczba godzin poświęcona w ciągu dnia na dodatkowe zajęcia
+* <span style="color: #FF69B4;">Sleep_Hours_Per_Day</span> - liczba godzin poświęcona w ciągu dnia na sen
+* <span style="color: #FF69B4;">Social_Hours_Per_Day</span> - liczba godzin poświęcona w ciągu dnia na aktywności społeczne
+* <span style="color: #FF69B4;">Physical_Activity_Hours_Per_Day</span> - liczba godzin poświęcona w ciągu dnia na aktywność fizyczną
+* <span style="color: #FF69B4;">GPA</span> - średnia ocen
+* <span style="color: #FF69B4;">Stress_Level</span> - poziom stresu
+
+# Wstępna analiza
+```{r, include = FALSE}
+dane<- read.csv("student_lifestyle_dataset.csv")
+```
+## 1. Zobaczenie kilku pierwszych wierszy
+```{r}
+head(dane)
+```
+
+## 2. Zapoznanie się z plikiem
+```{r}
+str(dane)
+```
+## 3. Sprawdzenie wystepowania wartości brakujących
+```{r, fig.show = "hide"}
+md.pattern(dane)
+```
+Na szczęscie wszystkie dane są pełne i nie ma żadnych braków.
+
+## 4. Obliczenie podstawowych statystyk opisowych
+```{r}
+summary(dane)
+```
+
+
+
+
+
