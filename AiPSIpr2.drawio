@@ -245,6 +245,26 @@
             <mxPoint x="-366" y="-180" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="2j3ntyPSlmijdVn_mwr4-50" connectable="0" parent="WIyWlLk6GJQsqaUBKTNV-1" style="text;html=1;resizable=0;points=[];;align=center;verticalAlign=middle;labelBackgroundColor=none;rounded=0;shadow=0;strokeWidth=1;fontSize=12;" value="jest wystawiane dla" vertex="1">
+          <mxGeometry x="530" y="170" as="geometry">
+            <mxPoint x="-102" y="-59" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2j3ntyPSlmijdVn_mwr4-51" connectable="0" parent="WIyWlLk6GJQsqaUBKTNV-1" style="resizable=0;align=right;verticalAlign=bottom;labelBackgroundColor=none;fontSize=12;" value="1" vertex="1">
+          <mxGeometry x="440" y="200" as="geometry">
+            <mxPoint x="-58" y="-55" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2j3ntyPSlmijdVn_mwr4-52" connectable="0" parent="WIyWlLk6GJQsqaUBKTNV-1" style="resizable=0;align=left;verticalAlign=bottom;labelBackgroundColor=none;fontSize=12;" value="*" vertex="1">
+          <mxGeometry x="400" y="100" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2j3ntyPSlmijdVn_mwr4-53" connectable="0" parent="WIyWlLk6GJQsqaUBKTNV-1" style="resizable=0;align=left;verticalAlign=bottom;labelBackgroundColor=none;fontSize=12;" value="*" vertex="1">
+          <mxGeometry x="290" y="-30" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
