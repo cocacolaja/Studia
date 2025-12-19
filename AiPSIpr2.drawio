@@ -555,6 +555,24 @@
         <mxCell id="2j3ntyPSlmijdVn_mwr4-140" parent="WIyWlLk6GJQsqaUBKTNV-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="lista uczestników" vertex="1">
           <mxGeometry height="30" width="140" x="1352" y="-61" as="geometry" />
         </mxCell>
+        <mxCell id="2j3ntyPSlmijdVn_mwr4-141" parent="WIyWlLk6GJQsqaUBKTNV-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="CloseEventParticipants()" vertex="1">
+          <mxGeometry height="30" width="140" x="1350" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="2j3ntyPSlmijdVn_mwr4-142" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" style="endArrow=classic;html=1;rounded=0;dashed=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1520" y="100.61" as="sourcePoint" />
+            <mxPoint x="1320" y="100.61" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2j3ntyPSlmijdVn_mwr4-143" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1320" y="80" as="sourcePoint" />
+            <mxPoint x="1520" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2j3ntyPSlmijdVn_mwr4-144" parent="WIyWlLk6GJQsqaUBKTNV-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="alarm" vertex="1">
+          <mxGeometry height="30" width="140" x="1346" y="75" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
