@@ -11,7 +11,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="aM9ryv3xv72pqoxQDRHE-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Client" vertex="1">
-          <mxGeometry height="300" width="100" x="40" y="40" as="geometry" />
+          <mxGeometry height="380" width="100" x="40" y="40" as="geometry" />
         </mxCell>
         <mxCell id="RyEGnBTtXDx6BcLUVzEh-9" edge="1" parent="1" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;">
           <mxGeometry relative="1" as="geometry">
@@ -20,27 +20,30 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="aM9ryv3xv72pqoxQDRHE-5" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="BookService" vertex="1">
-          <mxGeometry height="300" width="100" x="190" y="40" as="geometry" />
+          <mxGeometry height="380" width="100" x="190" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="RyEGnBTtXDx6BcLUVzEh-11" edge="1" parent="1" source="RyEGnBTtXDx6BcLUVzEh-1" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;" target="aM9ryv3xv72pqoxQDRHE-5">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="RyEGnBTtXDx6BcLUVzEh-11" edge="1" parent="1" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;dashed=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="189.5" as="sourcePoint" />
+            <mxPoint x="240" y="189.5" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="RyEGnBTtXDx6BcLUVzEh-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="BookRepo" vertex="1">
-          <mxGeometry height="300" width="100" x="360" y="40" as="geometry" />
+          <mxGeometry height="380" width="100" x="360" y="40" as="geometry" />
         </mxCell>
         <mxCell id="RyEGnBTtXDx6BcLUVzEh-3" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="p : Book" vertex="1">
-          <mxGeometry height="300" width="100" x="520" y="40" as="geometry" />
+          <mxGeometry height="380" width="100" x="520" y="40" as="geometry" />
         </mxCell>
         <mxCell id="RyEGnBTtXDx6BcLUVzEh-5" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="p : Prolongation" vertex="1">
-          <mxGeometry height="300" width="100" x="670" y="40" as="geometry" />
+          <mxGeometry height="380" width="100" x="670" y="40" as="geometry" />
         </mxCell>
         <mxCell id="RyEGnBTtXDx6BcLUVzEh-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&#xa;Prolong(idBook, returnDate)&#xa;&#xa;" vertex="1">
           <mxGeometry height="30" width="170" x="80" y="110" as="geometry" />
         </mxCell>
         <mxCell id="RyEGnBTtXDx6BcLUVzEh-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Find(idBook)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="170" x="240" y="110" as="geometry" />
+          <mxGeometry height="30" width="170" x="240" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="RyEGnBTtXDx6BcLUVzEh-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;b : Book&lt;/div&gt;" vertex="1">
+        <mxCell id="RyEGnBTtXDx6BcLUVzEh-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;dashed=1;" value="&lt;div&gt;b : Book&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="170" x="240" y="170" as="geometry" />
         </mxCell>
         <mxCell id="RyEGnBTtXDx6BcLUVzEh-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&#xa;Prolong(returnDate)&#xa;&#xa;" vertex="1">
@@ -55,15 +58,42 @@
         <mxCell id="RyEGnBTtXDx6BcLUVzEh-18" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <Array as="points">
-              <mxPoint x="610" y="250" />
-              <mxPoint x="610" y="290" />
+              <mxPoint x="610" y="280" />
+              <mxPoint x="610" y="320" />
             </Array>
-            <mxPoint x="570" y="250" as="sourcePoint" />
-            <mxPoint x="570" y="290" as="targetPoint" />
+            <mxPoint x="570" y="280" as="sourcePoint" />
+            <mxPoint x="570" y="320" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="RyEGnBTtXDx6BcLUVzEh-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;MarkProlongation(p)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="170" x="520" y="220" as="geometry" />
+          <mxGeometry height="30" width="170" x="520" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="RyEGnBTtXDx6BcLUVzEh-21" edge="1" parent="1" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="250" as="sourcePoint" />
+            <mxPoint x="720" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RyEGnBTtXDx6BcLUVzEh-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&amp;lt;&amp;lt;Prolongation(returnDate)&amp;gt;&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="170" x="560" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="RyEGnBTtXDx6BcLUVzEh-24" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;dashed=1;" target="aM9ryv3xv72pqoxQDRHE-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="570" y="360" as="sourcePoint" />
+            <mxPoint x="410" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RyEGnBTtXDx6BcLUVzEh-25" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;dashed=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="400" as="sourcePoint" />
+            <mxPoint x="90" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RyEGnBTtXDx6BcLUVzEh-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="OK" vertex="1">
+          <mxGeometry height="30" width="60" x="350" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="RyEGnBTtXDx6BcLUVzEh-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="OK" vertex="1">
+          <mxGeometry height="30" width="60" x="140" y="370" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
